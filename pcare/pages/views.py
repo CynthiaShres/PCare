@@ -5,3 +5,9 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse('<h1> This is my home page </h1>')
+
+def index(request):
+    return render(request,'pages/about.html')
+
+def index(request):
+    return render(request,'careyourself/healthy_diet.html')
